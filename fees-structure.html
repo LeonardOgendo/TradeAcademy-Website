@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tradeplus Forex Academy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.jss">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    </head>
+    <body>
+            <div class="menu-bar">
+                <div class="fbox1">
+                <div class="box1">
+                    <div>
+                    <a href="LandingPage.html"><img class="logo" src="Images/logo.jpg"></a>
+                    </div>
+                    <h3 style="color: rgb(0, 50, 110)">Tradeplus Forex Academy</h3>
+                </div>
+                </div>
+                <div class="fbox1">
+                <ul id="navLinks">
+                        <i class="fa fa-times" id="irm" onclick="hideMenu()"></i>
+                    <li><i class="fa fa-home"></i><a href="LandingPage.html">Home</a></li>
+                    <li><i class="fa fa-user"></i><a href="">About Us</a>
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="preface.html">Preface</a></li>
+                                <li><a href="companypreview.html">Academy Preview</a></li>
+                                <li><a href="success-stories.html">Success Stories</a></li>
+                                <li><a href="documents.html">Documents</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><i class="fa fa-edit"></i><a href="">Programs</a>
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="forex-basics.html">Forex Basics</a></li>
+                                <li><a href="Techical-analysis.html">Technical Analysis</a></li>
+                                <li><a href="Fundamental-analysis.html">Fundamental Analysis</a></li>
+                                <li><a href="Risk-management.html">Risk Management</a></li>
+                                <li><a href="Trading-strategies.html">Trading Strategies</a></li>
+                                <li style="border-bottom: none; text-align: right;" class="hover-me"><a href="">View more</a><i class="fa fa-angle-right"></i>
+                                    <div class="sub-menu2">
+                                        <ul>
+                                            <li><a href="Trading-signals.html">Trading signals</a></li>
+                                            <li><a href="Account-management.html">Account Management</a></li>
+                                            <li style="border-bottom: none;"><a href="Mentorship-programs.html">Mentorship programs</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                    </li>
+                    <li><i class="fa fa-inr"></i><a href="">Pricing</a></i>
+                        <div class="sub-menu1">
+                            <ul>
+                                <li><a href="payment.html">Payment details</a></li>
+                                <li><a href="fees-structure.html">Fees structure</a></li>
+                    
+                            </ul>
+                        </div>
+                    </li>
+                    <li><i class="fa fa-clone"></i><a href="application.html">Applications</a></li>
+                    <li><i class="fa fa-phone"></i><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+                <i class="fa fa-bars" id="irm" onclick="showMenu()"></i>
+            </div>
+        
+
+<!--swiper section-->
+        <section class="container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="Images/sld1.jpeg"></div>  
+                            <div class="swiper-slide"><img src="Images/Pict1.png"></div>
+                            <div class="swiper-slide"><img src="Images/bg2.png"></div> 
+                        </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+        </section>
+<!---preface-->
+    <section class="preface">
+        <a href="">Get Started &#8594;</a>
+        <h2>Fees Structure</h2>
+        <img id="fee-st" src="Images/Fst.png">
+        <h2>Schedules</h2>
+        <div class="sch" style="display: inline-flex;">
+            <div class="sch1" style="padding-right: 100px;">
+            <h4 style="color: rgb(0, 50, 110);">Classes</h4>
+            <p style="color: dodgerblue;">Monday - Friday<br>
+            2PM - 5PM</p>
+            </div>
+            <div class="sch1">
+                <h4 style="color: rgb(0, 50, 110);">Online Classes</h4>
+                <p style="color: dodgerblue; font-size: 15px;">Saturday<br>
+                11AM - 1PM</p>
+                </div>
+        </div>
+    </section>
+
+
+    
+
+<!--footer-->
+    <section class="footer">
+        <h4>Find Us</h4>
+        <p>we are headquartered in a state-of-the-art facility in the heart of a bustling financial district<br> and have trained thousands of students.
+            Follow us on:
+        </p>
+        <div class="media-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+
+
+<!---Jss-->
+        <script>
+            var navLinks= document.getElementById("navLinks")
+            function showMenu()
+            {
+                navLinks.style.left="0";
+            }
+            function hideMenu()
+            {
+            navLinks.style.left = "-150px";
+            }
+        </script>  
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay:3000,
+                disableOnInteraction: false,
+            },
+         loop: true,
+        
+        
+          pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+         },
+        
+        
+         navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+         },
+         });
+         </script>
+    </body>
+</html>
+    </body>
+</html>
